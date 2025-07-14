@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(layout='wide')
 st.title('Auto MPG Dashboard')
 
-df = pd.read_csv('D:\streamlit project\practice\data\clean_auto_mpg.csv', index_col=0)
+df = pd.read_csv('clean_auto_mpg.csv', index_col=0)
 print(df.head())
 
 unique_origin = df['origin'].unique()
